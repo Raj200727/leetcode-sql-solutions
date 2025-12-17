@@ -1,0 +1,22 @@
+/*
+LeetCode 178 - Rank Scores
+
+Problem:
+Given a table `Scores` containing game scores, assign a rank to each score
+such that:
+- Higher scores get lower rank numbers (1 is highest).
+- Equal scores share the same rank.
+- Ranks are consecutive (no gaps).
+
+Table:
+Scores(id INT PRIMARY KEY, score DECIMAL)
+
+Expected Output:
+(score, rank) ordered by score descending.
+*/
+
+SELECT
+    score,
+    DENSE_RANK() OVER (ORDER BY score DESC) AS `rank`
+FROM Scores
+ORDER BY score DESC;
