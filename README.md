@@ -13,7 +13,7 @@ The focus is on understanding joins, filtering, aggregation, and relational logi
 
 ## Folder Structure
 - `easy/` – Beginner SQL problems
-- `medium/`= Intermediate SQL problems
+- `medium/` – Intermediate SQL problems
 - `notes/` – Personal notes and explanations
 
 ## Goal
